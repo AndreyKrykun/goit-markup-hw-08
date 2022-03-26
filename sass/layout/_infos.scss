@@ -1,0 +1,135 @@
+.info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.info-list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.info-list__title {
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width:768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
+}
+
+.info-list__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+  }
+}
+
+.info-list__item {
+  min-width: 270px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+    &:nth-child(1) {
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+    
+    flex-basis: calc((100% - 30px) /2);
+    min-width: 354px;
+  }
+
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) /4);
+    margin-bottom: 0;
+    min-width: 270px;
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url("../images2/antenna.svg");
+    background-color: #f5f4fa;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin-right: 30px;
+    @media screen and (min-width:768px) {
+      margin-right: 30px;
+      width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+      margin-right: 0;
+      width: 270px;
+    }
+
+  }
+  &:nth-child(2)::before {
+    background-image: url("../images2/clock.svg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../images2/diagram.svg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../images2/astronaut.svg");
+  }
+}  
