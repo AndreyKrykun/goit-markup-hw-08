@@ -25,6 +25,19 @@
             <a href="https://webstudio.com" class="header__logo">
                 <span>Web</span>Studio
             </a>
+            <button type="button" class="menu-button is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images2/icons.sprite.svg#icon-menu_mobile"></use>
+                    <use class="icon-cross" href="./images2/icons.sprite.svg#icon-close_mobile"></use>
+                </svg>
+            </button> 
+
+            <div class="menu-container" id="menu-container" data-menu>
+                Content
+            </div>
 
             <ul class="site-nav list">
                 <li class="site-nav__item"><a href="" class="site-nav__link current">Cтудия</a></li>
@@ -274,7 +287,7 @@
         </section>
     </main>
 
-    <!-- <footer class="footer list">
+    <footer class="footer list">
         <div class="container footer__content">
             <div class="container footer__address">
                 <a href="https://webstudio.com" class="footer-logo">
@@ -334,7 +347,7 @@
                 </form>
             </div>    
         </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -395,5 +408,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
