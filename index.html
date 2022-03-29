@@ -36,25 +36,31 @@
             </button> 
 
             <div class="menu-container" id="menu-container" data-menu>
-                Content
-            </div>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item"><a href="" class="site-nav__link current">Cтудия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>
 
-            <ul class="site-nav list">
-                <li class="site-nav__item"><a href="" class="site-nav__link current">Cтудия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
+                    <ul class="auth-nav list">
+                        <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="16" height="12">
+                            <use href="./images2/icons.sprite.svg#icon-envelope-hover-1"></use>
+                        </svg>info@devstudio.com</a>
+                            </li>
+                        <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="10" height="16">
+                            <use href="./images2/icons.sprite.svg#icon-smartphone-1"></use>
+                        </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mob-social list">
+                        <li class="mob-social__item"><a href="" class="mob-social__link">Instagram</a></li>
+                        <li class="mob-social__item"><a href="" class="mob-social__link">Twitter</a></li>
+                        <li class="mob-social__item"><a href="" class="mob-social__link">Facebook</a></li>
+                        <li class="mob-social__item"><a href="" class="mob-social__link">LinkedIn</a></li>
+                    </ul>
+            </div>
         </nav>
-        <ul class="auth-nav list">
-            <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="16" height="12">
-                <use href="./images2/icons.sprite.svg#icon-envelope-hover-1"></use>
-            </svg>info@devstudio.com</a>
-                </li>
-            <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="10" height="16">
-                <use href="./images2/icons.sprite.svg#icon-smartphone-1"></use>
-            </svg>+38 096 111 11 11</a>
-            </li>
-        </ul>
         </div>
     </header>
 
@@ -96,7 +102,7 @@
                 <li class="images-list__item">
                     <a href="">
                         <div class="works-overlay">
-                        <img src="./images/img1.jpg" alt="Работа с планшетом" height="294" width="370"/>
+                        <img srcset="./images/img1.jpg 1x, ./images2/works1-2x.jpg 2x" src="./images/img1.jpg" alt="Работа с планшетом" height="294" width="370"/>
                         <p class="works-overlay__text">Десктопные приложения</p>
                         </div>
                     </a>
@@ -104,7 +110,7 @@
                 <li class="images-list__item">
                     <a href="">
                         <div class="works-overlay">
-                        <img src="./images/img2.jpg" alt="Оптимизация для смартфона" height="294" width="370"/>
+                        <img srcset="./images/img2.jpg 1x, ./images2/works2-2x.jpg 2x" src="./images/img2.jpg" alt="Оптимизация для смартфона" height="294" width="370"/>
                         <p class="works-overlay__text">Мобильные приложения</p>
                         </div>
                     </a>
@@ -112,7 +118,7 @@
                 <li class="images-list__item">
                     <a href="">
                         <div class="works-overlay">
-                        <img src="./images/img3.jpg" alt="Дизайн через планшет" height="294" width="370"/>
+                        <img srcset="./images/img3.jpg 1x, ./images2/works3-2x.png 2x" src="./images/img3.jpg" alt="Дизайн через планшет" height="294" width="370"/>
                         <p class="works-overlay__text">Дизайнерские решения</p>
                         </div>
                     </a>
@@ -126,7 +132,7 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list__item">
-                    <img src="./images/img4.jpg" alt=" Игорь Демьяненко" height="260" width="270" />
+                    <img srcset="./images/img4.jpg 1x, ./images2/personal1-2x.jpg 2x" src="./images/img4.jpg" alt=" Игорь Демьяненко" height="260" width="270" />
                     <div class="item-text">
                         <h3 class="team-list__name">Игорь Демьяненко</h3>
                         <p class="team-list__text">Product Designer</p>
@@ -156,7 +162,7 @@
                     
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/img5.jpg" alt="Ольга Репина" height="260" width="270" />
+                    <img srcset="./images/img5.jpg 1x, ./images2/personal2-2x.jpg 2x" src="./images/img5.jpg" alt="Ольга Репина" height="260" width="270" />
                     <div class="item-text">
                         <h3 class="team-list__name">Ольга Репина</h3>
                         <p class="team-list__text">Frontend Developer</p>
@@ -185,7 +191,7 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/img6.jpg" alt=" Николай Тарасов" height="260" width="270" />
+                    <img srcset="./images/img6.jpg 1x, ./images2/personal3-2x.jpg 2x" src="./images/img6.jpg" alt=" Николай Тарасов" height="260" width="270" />
                     <div class="item-text">
                         <h3 class="team-list__name">Николай Тарасов</h3>
                         <p class="team-list__text">Marketing</p>
@@ -214,7 +220,7 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/img7.jpg" alt="Михаил Ермаков" height="260" width="270" />
+                    <img srcset="./images/img7.jpg 1x, ./images2/personal4-2x.jpg 2x" src="./images/img7.jpg" alt="Михаил Ермаков" height="260" width="270" />
                     <div class="item-text">
                         <h3 class="team-list__name">Михаил Ермаков</h3>
                         <p class="team-list__text">UI Designer</p>
@@ -302,7 +308,7 @@
                 </address>
             </div>
 
-            <div class="container footer-social-content">
+            <div class="footer-social-content">
                 <p class="footer-social-content__text">Присоединяйтесь</p>
                 <ul class="footer-social-content__list">
                     <li class="footer-social-content__item"><a class="footer-social-content__link">
@@ -332,7 +338,7 @@
                 </ul>
             </div>
 
-            <div class="container footer-subscribe">
+            <div class="footer-subscribe">
                 <p class="footer-subscribe__titel">Подпишитесь на рассылку</p>
                 <form class="footer-subscribe__form">
                     <div class="footer-subscribe__form-field">

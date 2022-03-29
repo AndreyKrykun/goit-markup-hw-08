@@ -23,33 +23,51 @@
 
   <body>
 
-    <!-- <header class="header">
-        <div class="container main-nav">
-            <nav class="main-nav">
-                <a href="https://webstudio.com" class="header__logo">
-                    <span>Web</span>Studio
-                </a>
-    
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Cтудия</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="auth-nav list">
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="16"
-                            height="12">
-                            <use href="./images2/icons.sprite.svg#icon-envelope-hover-1"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="10"
-                            height="16">
-                            <use href="./images2/icons.sprite.svg#icon-smartphone-1"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
-    </header> -->
+    <header class="header">
+      <div class="container main-nav">
+      <nav class="main-nav">
+          <a href="https://webstudio.com" class="header__logo">
+              <span>Web</span>Studio
+          </a>
+          <button type="button" class="menu-button is-open"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                  <use class="icon-menu" href="./images2/icons.sprite.svg#icon-menu_mobile"></use>
+                  <use class="icon-cross" href="./images2/icons.sprite.svg#icon-close_mobile"></use>
+              </svg>
+          </button> 
+
+          <div class="menu-container" id="menu-container" data-menu>
+              <ul class="site-nav list">
+                  <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Cтудия</a></li>
+                  <li class="site-nav__item"><a href="" class="site-nav__link current">Портфолио</a></li>
+                  <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+              </ul>
+
+              <ul class="auth-nav list">
+                  <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="16" height="12">
+                      <use href="./images2/icons.sprite.svg#icon-envelope-hover-1"></use>
+                  </svg>info@devstudio.com</a>
+                      </li>
+                  <li class="auth-nav__item"><a href="" class="auth-nav__link"><svg class="auth-nav__icon" width="10" height="16">
+                      <use href="./images2/icons.sprite.svg#icon-smartphone-1"></use>
+                  </svg>+38 096 111 11 11</a>
+                  </li>
+              </ul>
+
+              <ul class="mob-social list">
+                  <li class="mob-social__item"><a href="" class="mob-social__link">Instagram</a></li>
+                  <li class="mob-social__item"><a href="" class="mob-social__link">Twitter</a></li>
+                  <li class="mob-social__item"><a href="" class="mob-social__link">Facebook</a></li>
+                  <li class="mob-social__item"><a href="" class="mob-social__link">LinkedIn</a></li>
+              </ul>
+          </div>
+      </nav>
+      </div>
+  </header>
+
     <main>
       <section class="portfolio">
         <div class="container">
@@ -79,6 +97,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img1.jpg 1x, ./images2/portfolio1-2x.jpg 2x"
                     src="./images2/img1.jpg"
                     alt="Работа с ноутбуком"
                     height="294"
@@ -100,6 +119,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img2.jpg 1x, ./images2/portfolio2-2x.jpg 2x"
                     src="./images2/img2.jpg"
                     alt="Баскетболисты"
                     height="294"
@@ -123,6 +143,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img3.jpg 1x, ./images2/portfolio3-2x.jpg 2x"
                     src="./images2/img3.jpg"
                     alt="Эмблема ресторана"
                     height="294"
@@ -144,6 +165,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img4.jpg 1x, ./images2/portfolio4-2x.jpg 2x"
                     src="./images2/img4.jpg"
                     alt="Наушники"
                     height="294"
@@ -165,6 +187,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img5.jpg 1x, ./images2/portfolio5-2x.jpg 2x"
                     src="./images2/img5.jpg"
                     alt="Коробки"
                     height="294"
@@ -186,6 +209,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img6.jpg 1x, ./images2/portfolio6-2x.jpg 2x"
                     src="./images2/img6.jpg"
                     alt="Монитор"
                     height="294"
@@ -207,6 +231,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img7.jpg 1x, ./images2/portfolio7-2x.jpg 2x"
                     src="./images2/img7.jpg"
                     alt="Книги"
                     height="294"
@@ -228,6 +253,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img8.jpg 1x, ./images2/portfolio8-2x.jpg 2x"
                     src="./images2/img8.jpg"
                     alt="Табличка"
                     height="294"
@@ -249,6 +275,7 @@
               <a class="card-set__link" href="">
                 <div class="card-set__wrap">
                   <img
+                    srcset="./images2/img9.jpg 1x, ./images2/portfolio9-2x.jpg 2x"
                     src="./images2/img9.jpg"
                     alt="Работа с ноутбуком"
                     height="294"
