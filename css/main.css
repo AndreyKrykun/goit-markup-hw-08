@@ -292,10 +292,14 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.menu-container .mob-menu-bottom {
-  padding-bottom: 48px;
+@media screen and (max-width: 767px) {
+  .menu-container .mob-menu-bottom {
+    padding-bottom: 48px;
+  }
 }
 
 .menu-container.is-open {
