@@ -41,9 +41,12 @@
 .link-footer {
   padding-top: 0;
 }
+
 .footer-auth-nav > li {
   display: block;
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
   text-align: center;
 
   @media screen and (min-width:1200px) {
@@ -114,7 +117,7 @@
   margin-bottom: 60px;
 
   @media screen and (min-width:768px) {
-    margin-right: 74px;
+    margin-right: 45px;
     margin-left: 0;
     margin-bottom: 60px;
   }
@@ -144,7 +147,6 @@
 
 .footer-social-content__list {
   display: flex;
-  // padding-bottom: 30px;
 }
 
 .footer-social-content__link {

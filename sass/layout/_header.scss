@@ -8,10 +8,6 @@
   align-items: center;
 }
 
-// .main-nav.container {
-//   position: relative;
-// }
-
 .header__logo {
   margin-right: auto;
   padding-top: 24px;
@@ -70,7 +66,7 @@
 
   @media screen and (min-width:1200px) {
     &:nth-child(3) {
-      margin-right: 286px;
+      margin-right: 275px;
     }
   }
 }
@@ -143,6 +139,7 @@
   }
 
   @media screen and (min-width:1200px) {
+    margin-right: 30px;
     margin-bottom: 0;
   }
 }
@@ -209,10 +206,10 @@
 }
 
 .auth-nav__icon {
-
   @media screen and (max-width:767px) {
     display: none;
   }
+
   margin-right: 10px;
   vertical-align: middle;
   fill: currentColor;
@@ -266,4 +263,10 @@
   &:focus {
     background: #188ce8;
   } 
+}
+
+.auth-nav-mobile {
+  @media screen and (max-width:767px) {
+    bottom:0 ;
+  }
 }
